@@ -29,9 +29,13 @@ ss=sum((y-ybar)^2)
 
 ##
 ###################################################################################
-## Density function specification
+## calculate variance using more efficient estimate
 
 my.var=function(x){return(sum((x-mean(x))^2/(length(x)+1)))} #for Dr. bratcher ;-)
+
+##
+###################################################################################
+## Density function specification
 
 f.3=function(para,data){
 	eval=matrix(0,length(para[,1]),length(data))
